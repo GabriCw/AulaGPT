@@ -4,7 +4,7 @@ def criar_pergunta(OPENAI_API_KEY, assunto, tipo, dificultade, pergunta_exemplo 
 
   openai.api_key = OPENAI_API_KEY
   assunto = f'Elabore uma pergunta sobre {assunto}'
-  tipo = f'Ela deve ser do tipo {tipo}' + ' com 4 alternativas' if tipo == 'alternativa' else ''
+  tipo = f'Ela deve ser do tipo {tipo}' + ' com 4 alternativas' if tipo == 'Alternativa' else ''
   dificultade = f'Seu nível de dificuldade deve ser {dificultade}'
   pergunta_exemplo = f'Utilize esta pergunta como exemplo: {pergunta_exemplo}' if pergunta_exemplo != None and pergunta_exemplo != '\n' else ''
 

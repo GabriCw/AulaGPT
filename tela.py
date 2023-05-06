@@ -88,8 +88,7 @@ def criar_aba2(notebook, responder_pergunta):
   for i in range(5):
     tab2.grid_rowconfigure(i, weight=1)
 
-  for i in range(1):
-    tab2.grid_columnconfigure(i, weight=1)
+  tab2.grid_columnconfigure(0, weight=1)
 
   return tab2
 
